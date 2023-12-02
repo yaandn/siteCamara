@@ -54,10 +54,16 @@ export const Navigation = styled.nav`
 export const Button = styled.button`
   background-color: var(cor-primaria);
   padding: 8px 12px;
-  width: 130px;
+  width: ${({transparencia})=> (transparencia ? '160px' : '130px')};
+  border-radius: ${({transparencia}) => transparencia ? '8px': 'none'};
+  margin-left: ${({transparencia}) => transparencia ? '58px' : '0'};
   cursor: pointer;
   border: 0.5px solid lightgrey;
   border-bottom: 4px solid var(--cor-primaria);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 
   &:hover {
     background-color: var(--cor-primaria-light);
