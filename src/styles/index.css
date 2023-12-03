@@ -5,7 +5,9 @@
   --cor-primaria-light: rgba(45, 186, 108, 0.299);
   --cor-secundaria: #F5B709;
   --cor-terciaria: #1C3E7B;
-  --cor-neutra: #EBEBEB
+  --cor-neutra: #e7e7e7;
+  --cor-neutra-light: #f0f0f0;
+  
   
 }
 
@@ -17,7 +19,7 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #ffffff;
   color: #000000;
 }
 

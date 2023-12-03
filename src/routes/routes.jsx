@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from "../pages/home";
-import Vereadores from "../pages/vereadores";
+import Home from "../pages/Home";
+import Vereadores from "../pages/Vereadores";
 
 
 export default function RoutesApp() {
