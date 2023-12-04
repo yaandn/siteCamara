@@ -1,8 +1,13 @@
+
 import { Container, Navigation, Button,TopLine } from "./style"
+
 import { FaCircleInfo } from "react-icons/fa6";
 import Footer from "./Footer";
 import logo from '../../assets/imagens/logo.png'
 import { useState } from "react";
+
+import { Link } from "react-router-dom";
+
 
 
 export default function Header() {
@@ -32,29 +37,43 @@ export default function Header() {
           <img src={logo} alt="logo-camâra" />
           {botoes.map((botao, index) => {
             return (
-              <Button
-                key={botao.id}
-                onClick={()=> setIsAtive((index))}
-                isAtive ={isAtive}
-                className={
-                  isAtive === index
-                  ? 'isActive'
-                  : 'isNotActive'
-                }
-              >
-                {console.log(isAtive)}
-                <span>{botao.label}</span>
-              </Button>
+              
+                <Link
+                  to={
+                    index === 1
+                    ? "/vereadores"
+                    : "/"
+                  }
+                >
+                  
+                    <Button
+                      key={botao.id}
+                      onClick={()=> setIsAtive((index))}
+                      isAtive ={isAtive}
+                      className={
+                        isAtive === index
+                        ? 'isActive'
+                        : 'isNotActive'
+                      }
+                    >
+                      {console.log(isAtive)}
+                    <span>{botao.label}</span>
+                    </Button>
+                </Link>
+                
+              
             )
           })}
-          <Button className="transparencia">
-            <FaCircleInfo
-              size={28}
-              color="#158146"
+          
+            <Button className="transparencia">
+              <FaCircleInfo
+                size={28}
+                color="#158146"
             
-            />
-            <span>Acesso a informação</span>
-          </Button>
+              />
+              <span>Acesso a informação</span>
+            </Button>
+          
         </Navigation>
       </Container>
       <Footer/>

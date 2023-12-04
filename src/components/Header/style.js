@@ -45,6 +45,10 @@ export const Navigation = styled.nav`
   justify-content: center;
   gap: 40px;
 
+  a {
+    text-decoration: none;
+  }
+
   .isActive {
     background-color: var(--cor-primaria-light);
     padding: 8px 12px;
