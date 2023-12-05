@@ -49,7 +49,7 @@ export const Navigation = styled.nav`
     text-decoration: none;
   }
 
-  .isActive {
+  .is-active {
     background-color: var(--cor-primaria-light);
     padding: 8px 12px;
     width: ${({transparencia})=> (transparencia ? '160px' : '130px')};
@@ -65,7 +65,7 @@ export const Navigation = styled.nav`
     
   }
 
-  .isNotActive {
+  .is-not-active {
     padding: 8px 12px;
     width: ${({transparencia})=> (transparencia ? '160px' : '130px')};
     border-radius: ${({transparencia}) => transparencia ? '8px': 'none'};
@@ -85,7 +85,8 @@ export const Navigation = styled.nav`
       padding: 8px 12px;
       width: 160px;
       border-radius: 8px;
-      margin-left: 58px;
+      box-shadow: 6px 26px 89px -22px rgba(120,119,120,1);
+      margin-left: 40px;
       cursor: pointer;
       border: 0.5px solid lightgrey;
       border-bottom: 4px solid var(--cor-primaria);
@@ -95,11 +96,29 @@ export const Navigation = styled.nav`
       flex-direction: row;
     }
 
+    .logo-radar {
+      width: 150px;
+      cursor: pointer;
+      height: 79%;
+      padding: 4px;
+      border-radius: 8px;
+      border: 0.5px solid lightgrey;
+      border-bottom: 4px solid var(--cor-primaria);
+      box-shadow: 6px 26px 89px -22px rgba(120,119,120,1);
 
-  img {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+
+  .logo-camara {
     width: 100px;
     margin-right: 40px;
   }
+
+ 
 `;
 
 export const Button = styled.button`

@@ -4,6 +4,7 @@ import { Container, Navigation, Button,TopLine } from "./style"
 import { FaCircleInfo } from "react-icons/fa6";
 import Footer from "./Footer";
 import logo from '../../assets/imagens/logo.png'
+import logoTransparencia from '../../assets/imagens/logo-transparencia.png'
 import { useState } from "react";
 
 import { Link } from "react-router-dom";
@@ -24,7 +25,7 @@ export default function Header() {
     }
   ]
 
-  const [isAtive, setIsAtive] = useState(1)
+  const [active, setActive] = useState(1)
   return (
     <>
       <TopLine>
@@ -34,7 +35,7 @@ export default function Header() {
       </TopLine>
       <Container>
         <Navigation>
-          <img src={logo} alt="logo-camâra" />
+          <img src={logo} alt="logo-camâra" className="logo-camara" />
           {botoes.map((botao, index) => {
             return (
               
@@ -44,19 +45,18 @@ export default function Header() {
                     ? "/vereadores"
                     : "/"
                   }
+                  key={index}
                 >
                   
                     <Button
                       key={botao.id}
-                      onClick={()=> setIsAtive((index))}
-                      isAtive ={isAtive}
+                      onClick={()=> setActive((index))}
                       className={
-                        isAtive === index
-                        ? 'isActive'
-                        : 'isNotActive'
+                        active === index
+                        ? 'is-active'
+                        : 'is-not-active'
                       }
                     >
-                      {console.log(isAtive)}
                     <span>{botao.label}</span>
                     </Button>
                 </Link>
@@ -64,6 +64,8 @@ export default function Header() {
               
             )
           })}
+
+           
           
             <Button className="transparencia">
               <FaCircleInfo
@@ -73,6 +75,7 @@ export default function Header() {
               />
               <span>Acesso a informação</span>
             </Button>
+            <a href="https://radar.tce.mt.gov.br/extensions/radar-da-transparencia-publica/radar-da-transparencia-publica.html" target="_blank" className="logo-radar"><img src={logoTransparencia} alt="logo-radar-transparencia" /></a>
           
         </Navigation>
       </Container>
