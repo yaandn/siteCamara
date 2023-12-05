@@ -74,11 +74,11 @@ export const vereadoresList = [
          foto: Serginho, 
     },
     {
-        nome: 'Rony Rodrigo Barbosa',
+        nome: 'Eudes Carlos de Oliveira',
         partido: 'PMDB',
         biografia: 'lorem ypsum',
-        telefone: '(62) 98630-5412',
-        email: 'ronyrodrigogago@gmail.com',
-         foto: Rony, 
+        telefone: '(62) 98660-2104',
+        email: 'eudescarlosoliveira@gmail.com',
+        foto: Eudes, 
     }
 ]

@@ -5,7 +5,7 @@ import { FaCircleInfo } from "react-icons/fa6";
 import Footer from "./Footer";
 import logo from '../../assets/imagens/logo.png'
 import logoTransparencia from '../../assets/imagens/logo-transparencia.png'
-import { useState } from "react";
+import { useLayoutEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
 
@@ -26,6 +26,22 @@ export default function Header() {
   ]
 
   const [active, setActive] = useState(0)
+
+  function handlePageIndex(index) {
+    localStorage.setItem('pageAtual', index);
+    setActive(index);
+  }
+
+  useLayoutEffect(() => {
+    const page = localStorage.getItem('pageAtual');
+    
+    setActive(Number(page))
+    
+    
+  }, [])
+
+  
+
   return (
     <>
       <TopLine>
@@ -50,7 +66,7 @@ export default function Header() {
                   
                     <Button
                       key={botao.id}
-                      onClick={()=> setActive((index))}
+                      onClick={() => handlePageIndex(index)}
                       className={
                         active === index
                         ? 'is-active'
