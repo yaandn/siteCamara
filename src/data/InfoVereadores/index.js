@@ -10,14 +10,17 @@ import Serginho from '../../assets/imagens/serginho.png'
 
 export const vereadoresList = [
     {
+        id:1,
         nome: 'Rony Rodrigo Barbosa',
         partido: 'PMDB',
         biografia: 'lorem ypsum',
         telefone: '(62) 98630-5412',
         email: 'ronyrodrigogago@gmail.com',
-        foto: Rony, 
+        foto: Rony,
+         
     },
     {
+        id: 2,
         nome: 'Alessandro Teixeira dos Santos',
         partido: 'PMDB',
         biografia: 'lorem ypsum',
@@ -26,6 +29,7 @@ export const vereadoresList = [
          foto: Alessandro, 
     },
     {
+        id: 3,
         nome: 'Fabiana Leite de Souza',
         partido: 'PMDB',
         biografia: 'lorem ypsum',
@@ -34,6 +38,7 @@ export const vereadoresList = [
          foto: Bia, 
     },
     {
+        id: 4,
         nome: 'Francisco Ferreira de Medeiros',
         partido: 'PMDB',
         biografia: 'lorem ypsum',
@@ -42,6 +47,7 @@ export const vereadoresList = [
          foto: Chico, 
     },
     {
+        id: 5,
         nome: 'Julio Cesar Batista',
         partido: 'PMDB',
         biografia: 'lorem ypsum',
@@ -50,6 +56,7 @@ export const vereadoresList = [
          foto: JulioCesar, 
     },
     {
+        id: 6,
         nome: 'Leandro Braz da Silva',
         partido: 'PMDB',
         biografia: 'lorem ypsum',
@@ -58,6 +65,7 @@ export const vereadoresList = [
          foto: Leandro 
     },
     {
+        id: 7,
         nome: 'Paulo Roberto de Oliveira',
         partido: 'PMDB',
         biografia: 'lorem ypsum',
@@ -66,6 +74,7 @@ export const vereadoresList = [
          foto: Paulinho, 
     },
     {
+        id: 8,
         nome: 'Sergio Lourenço de Souza',
         partido: 'PMDB',
         biografia: 'lorem ypsum',
@@ -74,6 +83,7 @@ export const vereadoresList = [
          foto: Serginho, 
     },
     {
+        id:9,
         nome: 'Eudes Carlos de Oliveira',
         partido: 'PMDB',
         biografia: 'lorem ypsum',

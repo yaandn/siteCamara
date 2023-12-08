@@ -28,12 +28,12 @@ export default function Header() {
   const [active, setActive] = useState(0)
 
   function handlePageIndex(index) {
-    localStorage.setItem('pageAtual', index);
+    sessionStorage.setItem('pageAtual', index);
     setActive(index);
   }
 
   useLayoutEffect(() => {
-    const page = localStorage.getItem('pageAtual');
+    const page = sessionStorage.getItem('pageAtual');
     
     setActive(Number(page))
     

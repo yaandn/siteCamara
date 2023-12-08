@@ -1,4 +1,5 @@
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import NotFound from "../NotFound";
 
 import { Container, SearchContainer, BoxContainer,  Card, Footer } from "./styles";
 import  {vereadoresList}  from "../../data/InfoVereadores";
@@ -12,7 +13,7 @@ export default function VereadorsList() {
 
     const handleFiltroChange = (event) => {
         setFiltro(event.target.value)
-        console.log(filtro)
+        
        
     }
 
@@ -42,8 +43,11 @@ export default function VereadorsList() {
 
             </SearchContainer>
             <BoxContainer>
+                
                
-                {vereadores.map((vereador, index)=> {
+                { vereadores.length > 0 ? 
+                
+                vereadores.map((vereador, index)=> {
                     return (
                         <Card key={index}>
                             <img src={vereador.foto} alt='foto-vereador' className="foto-vereador" />
@@ -57,7 +61,7 @@ export default function VereadorsList() {
                             </Footer>
                         </Card>
                     )
-                })}
+                }): <NotFound text="Nenhum vereador encontrado"/>}
             </BoxContainer>
         </Container>
     );
