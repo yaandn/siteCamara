@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import NotFound from "../NotFound";
+import Card from "../Card";
 
-import { Container, SearchContainer, BoxContainer,  Card, Footer } from "./styles";
+import { Container, SearchContainer, BoxContainer } from "./styles";
 import  {vereadoresList}  from "../../data/InfoVereadores";
 import { FaSearch } from "react-icons/fa";
 
@@ -54,17 +55,12 @@ export default function VereadorsList() {
                 vereadores.map((vereador, index)=> {
                     return (
                         <Link to= {`/vereadores/${vereador.id}`}  key={index}>
-                            <Card>
-                                <img src={vereador.foto} alt='foto-vereador' className="foto-vereador" />
-                                <Footer>
-                                    <div className="partido">
-                                        <span>{vereador.partido}</span>
-                                    </div>
-                                    <div className="box-name">
-                                        <span>{vereador.nome}</span>
-                                    </div>
-                                </Footer>
-                            </Card>
+                            <Card 
+                                foto={vereador.foto}
+                                partido={vereador.partido}
+                                nome={vereador.nome}
+                            />
+                           
                         </Link>
                     )
                 }): <NotFound text="Nenhum vereador encontrado"/>}
