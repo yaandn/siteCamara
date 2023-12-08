@@ -1,4 +1,4 @@
-import { useLayoutEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { useParams } from "react-router-dom"
 import { Container, BoxContainer, InfoContainer, BioContainer } from "./style";
 
@@ -11,6 +11,8 @@ export default function Vereador() {
 
     const {id} = useParams();
     const [vereador, setVereador] = useState({});
+   
+    
 
     
 
@@ -18,6 +20,10 @@ export default function Vereador() {
         const vereadorSelecionado = vereadoresList.find((vereador)=> vereador.id == id)
         setVereador(vereadorSelecionado);  
     }, [])
+
+    
+
+    
 
     return (
         <Container>
@@ -31,9 +37,29 @@ export default function Vereador() {
                         nano="nano"
                     />
 
+                    <span className="subtitle">FALE COM O SEU VEREADOR</span>
+                    <div className="infos">
+                        <div>
+                            <span className="item-title">Telefone:</span>
+                            <span className="item">{vereador.telefone}</span>
+                        </div>
+                        <div>
+                            <span className="item-title">Email:</span>
+                            <span className="item">{vereador.email}</span>
+                        </div>
+                        <div>
+                            <span className="item-title">Endereço para correspondência:</span>
+                            <span className="item">Av. Alfredo Nasser, 544 - Centro, Aragoiânia - GO, 75360-000</span>
+                        </div>
+                    </div>
+
+
+
 
                 </InfoContainer>
                 <BioContainer>
+                    <span>Biografia</span>
+                    <span className="bio">{vereador.biografia}</span>
 
                 </BioContainer>
             </BoxContainer>

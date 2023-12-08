@@ -1,10 +1,12 @@
-import {Container, Footer} from './style'
+import {Container, BoxImg, Footer} from './style'
 
 export default function Card ({foto, partido, nome, nano}) {
     return (
-        
         <Container type={nano}>
-            <img src={foto} alt='foto-vereador' className="foto-vereador" />
+            <BoxImg type={nano}>
+                <img src={foto} alt='foto-vereador' className="foto-vereador" />
+              
+            </BoxImg>
             <Footer type ={nano}>
                 <div className="partido">
                     <span>{partido}</span>
@@ -14,6 +16,8 @@ export default function Card ({foto, partido, nome, nano}) {
                 </div>
             </Footer>
         </Container>
+        
+        
     )
     
 }
