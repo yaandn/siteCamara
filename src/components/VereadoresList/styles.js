@@ -20,6 +20,11 @@ export const BoxContainer = styled.div`
     gap: 80px;
     flex-wrap: wrap;
     margin-bottom: 100px;
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
 `;
 
 export const Card = styled.div`

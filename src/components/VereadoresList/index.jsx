@@ -5,10 +5,14 @@ import { Container, SearchContainer, BoxContainer,  Card, Footer } from "./style
 import  {vereadoresList}  from "../../data/InfoVereadores";
 import { FaSearch } from "react-icons/fa";
 
+import { Link } from "react-router-dom";
+
 
 export default function VereadorsList() {
     const [filtro, setFiltro] = useState('');
     const [vereadores, setVereadores] = useState(vereadoresList);
+
+    
     
 
     const handleFiltroChange = (event) => {
@@ -49,17 +53,19 @@ export default function VereadorsList() {
                 
                 vereadores.map((vereador, index)=> {
                     return (
-                        <Card key={index}>
-                            <img src={vereador.foto} alt='foto-vereador' className="foto-vereador" />
-                            <Footer>
-                                <div className="partido">
-                                    <span>{vereador.partido}</span>
-                                </div>
-                                <div className="box-name">
-                                    <span>{vereador.nome}</span>
-                                </div>
-                            </Footer>
-                        </Card>
+                        <Link to= {`/vereadores/${vereador.id}`}  key={index}>
+                            <Card>
+                                <img src={vereador.foto} alt='foto-vereador' className="foto-vereador" />
+                                <Footer>
+                                    <div className="partido">
+                                        <span>{vereador.partido}</span>
+                                    </div>
+                                    <div className="box-name">
+                                        <span>{vereador.nome}</span>
+                                    </div>
+                                </Footer>
+                            </Card>
+                        </Link>
                     )
                 }): <NotFound text="Nenhum vereador encontrado"/>}
             </BoxContainer>
