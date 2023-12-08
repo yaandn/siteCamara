@@ -1,10 +1,11 @@
 import {Container, Footer} from './style'
 
-export default function Card ({foto, partido, nome}) {
+export default function Card ({foto, partido, nome, nano}) {
     return (
-        <Container>
+        
+        <Container type={nano}>
             <img src={foto} alt='foto-vereador' className="foto-vereador" />
-            <Footer>
+            <Footer type ={nano}>
                 <div className="partido">
                     <span>{partido}</span>
                 </div>

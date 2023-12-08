@@ -59,6 +59,7 @@ export default function VereadorsList() {
                                 foto={vereador.foto}
                                 partido={vereador.partido}
                                 nome={vereador.nome}
+                                nano="large"
                             />
                            
                         </Link>

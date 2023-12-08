@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    width: 300px;
-    height: 300px;
+    width: ${({type}) => type === 'nano' ? '200px' : '300px'};
+    height: ${({type}) => type === 'nano' ? '200px' : '300px'};
     border: 2px solid var(--cor-primaria);
     border-bottom: 8px solid var(--cor-primaria);
     display: flex;
@@ -38,8 +38,8 @@ export const Footer = styled.footer`
     display: flex;
     gap: 16px;
     align-items: center;
-    width: 300px;
-    height: 56px;
+    width: ${({type}) => type === 'nano' ? '200px' : '300px'};
+    height: ${({type}) => type === 'nano' ? '200px' : '300px'};
     background-color: #fff;
     margin-top: 4px;
     
