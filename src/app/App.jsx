@@ -1,14 +1,17 @@
 import RoutesApp from "../routes/routes"
 import Header from "../components/Header";
 import { BrowserRouter } from "react-router-dom";
+import InfoAccessProvider from "../context/InfoAccessContext";
 
 
 function App() {
   return (
-    <BrowserRouter>
-      <Header/>
-      <RoutesApp/>
-    </BrowserRouter>
+    <InfoAccessProvider>
+      <BrowserRouter>
+        <Header/>
+        <RoutesApp/>
+      </BrowserRouter>
+    </InfoAccessProvider>
   );
 }
 

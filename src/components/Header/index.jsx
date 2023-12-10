@@ -10,11 +10,13 @@ import logoTransparencia from '../../assets/imagens/logo-transparencia.png'
 import { useLayoutEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
+import { InfoAccessContext } from "../../context/InfoAccessContext";
+import { useContext } from "react";
 
 
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+  
 
   const botoes = [
     {
@@ -29,6 +31,7 @@ export default function Header() {
   ]
 
   const [active, setActive] = useState(0)
+  const { hover, setHover} = useContext(InfoAccessContext);
 
   function handlePageIndex(index) {
     sessionStorage.setItem('pageAtual', index);
@@ -37,8 +40,8 @@ export default function Header() {
 
   useLayoutEffect(() => {
     const page = sessionStorage.getItem('pageAtual');
-    
     setActive(Number(page))
+    console.log(hover);
     
     
   }, [])
@@ -88,7 +91,8 @@ export default function Header() {
           
             <Button
               className="transparencia"
-              onMouseOver={() => setIsOpen('true')}
+              onMouseOver={() => setHover(true)}
+              onMouseOut={() => setHover(false)}
             >
               <FaCircleInfo
                 size={28}
@@ -101,7 +105,7 @@ export default function Header() {
             
           
         </Navigation>
-      <AccessInfo isOpen={isOpen}/>  
+      <AccessInfo isOpen={hover}/>  
       </Container>
       
       <Footer/>

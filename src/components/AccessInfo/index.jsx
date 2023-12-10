@@ -1,14 +1,17 @@
-
 import { Container, BoxInfo, Title, BoxLinks, TextLinks } from './style'
-
 import { infoAccess } from '../../data/InfoTransparencia'
+import { InfoAccessContext } from '../../context/InfoAccessContext'
+import { useContext } from 'react'
 
-export default function AccessInfo({isOpen}) {
+export default function AccessInfo() {
+    const {setHover,hover} = useContext(InfoAccessContext)
   
     return (
         <Container
-            isopen={isOpen}
-            onMouseOut={() => isOpen = false}
+            isopen={hover}
+            onMouseOver={() => setHover(true)}
+            onMouseOut={() => setHover(false)}
+            
 
         >
             {infoAccess.map((campo) => {
