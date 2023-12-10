@@ -51,8 +51,7 @@ export const Footer = styled.footer`
     gap: 16px;
     align-items: center;
     width: 100%;
-    height: 20%;
-   
+    height: 25%;
     background-color: #fff;
     
     padding: 16px;
@@ -60,13 +59,11 @@ export const Footer = styled.footer`
     border-top: 4px solid var(--cor-secundaria) ;
     
 
-   
-
-    
-
     .partido {
         font-size: 14px;
-     
+        width: 70px;
+        
+        
         height: 100%;
         border-right: 2px solid var(--cor-primaria);
         display: flex;
@@ -76,6 +73,29 @@ export const Footer = styled.footer`
         span {
             text-align: center;
             margin-right: 12px;
+            font-weight: bold;
         }
+
+       img {
+            height: 50px;
+            width: 60px;
+            padding: 8px;
+            margin-right: 8px;   
+        }
+
+        
+
+
+
+        
     }
+
+    .box-name {
+
+    span {
+        font-size: ${({type}) => type === 'nano' ? '16px' : '20px'};
+        font-weight: ${({type}) => type === 'nano' ? 'normal' : 'bold'};
+    }
+
+}
 `;

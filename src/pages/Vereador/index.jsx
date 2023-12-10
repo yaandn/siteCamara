@@ -37,6 +37,23 @@ export default function Vereador() {
                         nano="nano"
                     />
 
+                    <div className="infos">
+                        <div>
+                            <span className="item-title">Naturalidade:</span>
+                            <span className="item">{vereador.naturalidade}</span>
+                        </div>
+                        <div>
+                            <span className="item-title">Base eleitoral:</span>
+                            <span className="item">{vereador.baseEleitoral}</span>
+                        </div>
+                        <div>
+                            <span className="item-title">Quantidade de votos:</span>
+                            <span className="item">{`${vereador.votos} votos em 2020`}</span>
+                        </div>
+                    </div>
+
+                    
+
                     <span className="subtitle">FALE COM O SEU VEREADOR</span>
                     <div className="infos">
                         <div>

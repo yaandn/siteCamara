@@ -82,6 +82,84 @@ export const infoAccess = [
                 ]
         },
         {
+            titulo: 'Legislação e Publicações',
+            topicos: [
+                {
+                    tituloTopico: 'Legislação Federal',
+                    link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/legislacao-federal'
+                },
+                {
+                    tituloTopico: 'Legislação Municipal',
+                    link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/legislacao-municipal'
+                },
+                {
+                    tituloTopico: 'Outras Publicações',
+                    link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/outras-publicacoes'
+                },
+                {
+                    tituloTopico: 'Dados Abertos',
+                    link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/dados-abertos'
+                },
+                {
+                    tituloTopico: 'Vídeos',
+                    link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/videos'
+                },
+                {
+                    tituloTopico: 'Documentos COVID-19',
+                    link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/documentos-covid-19'
+                },
+                {
+                    tituloTopico: 'Atividades Legislativas dos Parlamentares',
+                    link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/atividades-legislativas-dos-parlamentares?tipoDeDocumento=38&localDaPublicacao=10'
+                },
+                {
+                    tituloTopico: 'Regulamentação dos Valores Relativos às Cotas para Verba Indenizatória',
+                    link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/regulamentacao-dos-valores-relativos-as-cotas?tipoDeDocumento=37&localDaPublicacao=10'
+                },
+                {
+                    tituloTopico: 'Apreciação das Contas do Chefe do Poder Executivo',
+                    link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/apreciacao-das-contas-do-chefe-do-poder-executivo?tipoDeDocumento=36&localDaPublicacao=10'
+                },
+                {
+                    tituloTopico: 'Lista sobre as Votações Nominais',
+                    link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/lista-sobre-as-votacoes-nominais?tipoDeDocumento=35&localDaPublicacao=10'
+                },
+                {
+                    tituloTopico: 'Atas das Sessões',
+                    link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/atas-das-sessoes?tipoDeDocumento=34&localDaPublicacao=10'
+                },
+                {
+                    tituloTopico: 'Pauta das Comissões',
+                    link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/pauta-das-comissoes?tipoDeDocumento=33&localDaPublicacao=10'
+                },
+                {
+                    tituloTopico: 'Pauta das Sessões do Plenário',
+                    link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/pauta-das-sessoes-do-plenario?tipoDeDocumento=32&localDaPublicacao=10'
+                },
+                {
+                    tituloTopico: 'Projetos de Leis e de atos infralegais',
+                    link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/projetos-de-leis-e-atos-infralegais?tipoDeDocumento=31&localDaPublicacao=10'
+                },
+                {
+                    tituloTopico: 'Leis e atos infralegais (resoluções/decretos)',
+                    link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/leis-e-atos-infralegais?tipoDeDocumento=30&localDaPublicacao=10'
+                },
+                {
+                    tituloTopico: 'Composição da Casa',
+                    link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/composicao-da-casa?tipoDeDocumento=29&localDaPublicacao=10'
+                },
+                {
+                    tituloTopico: 'Política de Privacidade e Proteção de Dados',
+                    link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/politica-de-privacidade-e-protecao-de-dados?tipoDeDocumento=41&localDaPublicacao=13'
+                },
+                {
+                    tituloTopico: 'Responsável pelo Tratamento de Dados',
+                    link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/resposavel-pelo-tratamento-de-dados'
+                },
+                // Add more topics as needed
+            ]
+        },
+        {
             titulo: 'Contratos, Convênios e Licitações',
             topicos: [
                 {
@@ -214,84 +292,7 @@ export const infoAccess = [
                     
                 ]
             },
-            {
-                titulo: 'Legislação e Publicações',
-                topicos: [
-                    {
-                        tituloTopico: 'Legislação Federal',
-                        link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/legislacao-federal'
-                    },
-                    {
-                        tituloTopico: 'Legislação Municipal',
-                        link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/legislacao-municipal'
-                    },
-                    {
-                        tituloTopico: 'Outras Publicações',
-                        link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/outras-publicacoes'
-                    },
-                    {
-                        tituloTopico: 'Dados Abertos',
-                        link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/dados-abertos'
-                    },
-                    {
-                        tituloTopico: 'Vídeos',
-                        link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/videos'
-                    },
-                    {
-                        tituloTopico: 'Documentos COVID-19',
-                        link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/documentos-covid-19'
-                    },
-                    {
-                        tituloTopico: 'Atividades Legislativas dos Parlamentares',
-                        link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/atividades-legislativas-dos-parlamentares?tipoDeDocumento=38&localDaPublicacao=10'
-                    },
-                    {
-                        tituloTopico: 'Regulamentação dos Valores Relativos às Cotas para Verba Indenizatória',
-                        link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/regulamentacao-dos-valores-relativos-as-cotas?tipoDeDocumento=37&localDaPublicacao=10'
-                    },
-                    {
-                        tituloTopico: 'Apreciação das Contas do Chefe do Poder Executivo',
-                        link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/apreciacao-das-contas-do-chefe-do-poder-executivo?tipoDeDocumento=36&localDaPublicacao=10'
-                    },
-                    {
-                        tituloTopico: 'Lista sobre as Votações Nominais',
-                        link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/lista-sobre-as-votacoes-nominais?tipoDeDocumento=35&localDaPublicacao=10'
-                    },
-                    {
-                        tituloTopico: 'Atas das Sessões',
-                        link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/atas-das-sessoes?tipoDeDocumento=34&localDaPublicacao=10'
-                    },
-                    {
-                        tituloTopico: 'Pauta das Comissões',
-                        link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/pauta-das-comissoes?tipoDeDocumento=33&localDaPublicacao=10'
-                    },
-                    {
-                        tituloTopico: 'Pauta das Sessões do Plenário',
-                        link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/pauta-das-sessoes-do-plenario?tipoDeDocumento=32&localDaPublicacao=10'
-                    },
-                    {
-                        tituloTopico: 'Projetos de Leis e de atos infralegais',
-                        link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/projetos-de-leis-e-atos-infralegais?tipoDeDocumento=31&localDaPublicacao=10'
-                    },
-                    {
-                        tituloTopico: 'Leis e atos infralegais (resoluções/decretos)',
-                        link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/leis-e-atos-infralegais?tipoDeDocumento=30&localDaPublicacao=10'
-                    },
-                    {
-                        tituloTopico: 'Composição da Casa',
-                        link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/composicao-da-casa?tipoDeDocumento=29&localDaPublicacao=10'
-                    },
-                    {
-                        tituloTopico: 'Política de Privacidade e Proteção de Dados',
-                        link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/politica-de-privacidade-e-protecao-de-dados?tipoDeDocumento=41&localDaPublicacao=13'
-                    },
-                    {
-                        tituloTopico: 'Responsável pelo Tratamento de Dados',
-                        link: 'https://camaraaragoiania.megasofttransparencia.com.br/legislacao-e-publicacoes/resposavel-pelo-tratamento-de-dados'
-                    },
-                    // Add more topics as needed
-                ]
-            },
+           
             
     ];
            

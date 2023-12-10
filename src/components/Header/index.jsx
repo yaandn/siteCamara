@@ -3,6 +3,8 @@ import { Container, Navigation, Button,TopLine } from "./style"
 
 import { FaCircleInfo } from "react-icons/fa6";
 import Footer from "./Footer";
+import AccessInfo from "../AccessInfo";
+
 import logo from '../../assets/imagens/logo.png'
 import logoTransparencia from '../../assets/imagens/logo-transparencia.png'
 import { useLayoutEffect, useState } from "react";
@@ -12,6 +14,7 @@ import { Link } from "react-router-dom";
 
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
 
   const botoes = [
     {
@@ -83,7 +86,10 @@ export default function Header() {
 
            
           
-            <Button className="transparencia">
+            <Button
+              className="transparencia"
+              onMouseOver={() => setIsOpen('true')}
+            >
               <FaCircleInfo
                 size={28}
                 color="#158146"
@@ -92,9 +98,12 @@ export default function Header() {
               <span>Acesso a informação</span>
             </Button>
             <a href="https://radar.tce.mt.gov.br/extensions/radar-da-transparencia-publica/radar-da-transparencia-publica.html" target="_blank" className="logo-radar"><img src={logoTransparencia} alt="logo-radar-transparencia" /></a>
+            
           
         </Navigation>
+      <AccessInfo isOpen={isOpen}/>  
       </Container>
+      
       <Footer/>
     </>
    
