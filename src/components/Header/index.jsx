@@ -3,15 +3,20 @@ import { Container, Navigation, Button,TopLine } from "./style"
 
 import { FaCircleInfo } from "react-icons/fa6";
 import Footer from "./Footer";
+import AccessInfo from "../AccessInfo";
+
 import logo from '../../assets/imagens/logo.png'
 import logoTransparencia from '../../assets/imagens/logo-transparencia.png'
 import { useLayoutEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
+import { InfoAccessContext } from "../../context/InfoAccessContext";
+import { useContext } from "react";
 
 
 
 export default function Header() {
+  
 
   const botoes = [
     {
@@ -26,6 +31,7 @@ export default function Header() {
   ]
 
   const [active, setActive] = useState(0)
+  const { hover, setHover} = useContext(InfoAccessContext);
 
   function handlePageIndex(index) {
     sessionStorage.setItem('pageAtual', index);
@@ -34,8 +40,8 @@ export default function Header() {
 
   useLayoutEffect(() => {
     const page = sessionStorage.getItem('pageAtual');
-    
     setActive(Number(page))
+    console.log(hover);
     
     
   }, [])
@@ -83,7 +89,11 @@ export default function Header() {
 
            
           
-            <Button className="transparencia">
+            <Button
+              className="transparencia"
+              onMouseOver={() => setHover(true)}
+              onMouseOut={() => setHover(false)}
+            >
               <FaCircleInfo
                 size={28}
                 color="#158146"
@@ -92,9 +102,12 @@ export default function Header() {
               <span>Acesso a informação</span>
             </Button>
             <a href="https://radar.tce.mt.gov.br/extensions/radar-da-transparencia-publica/radar-da-transparencia-publica.html" target="_blank" className="logo-radar"><img src={logoTransparencia} alt="logo-radar-transparencia" /></a>
+            
           
         </Navigation>
+      <AccessInfo isOpen={hover}/>  
       </Container>
+      
       <Footer/>
     </>
    

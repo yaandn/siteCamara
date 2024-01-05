@@ -9,7 +9,7 @@ export default function Card ({foto, partido, nome, nano}) {
             </BoxImg>
             <Footer type ={nano}>
                 <div className="partido">
-                    <span>{partido}</span>
+                   <img src={partido} alt="partido"/>
                 </div>
                 <div className="box-name">
                     <span>{nome}</span>
