@@ -2,6 +2,7 @@ import RoutesApp from "../routes/routes"
 import Header from "../components/Header";
 import { BrowserRouter } from "react-router-dom";
 import InfoAccessProvider from "../context/InfoAccessContext";
+import Footer from "../components/Footer";
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <BrowserRouter>
         <Header/>
         <RoutesApp/>
+        <Footer/>
       </BrowserRouter>
     </InfoAccessProvider>
   );
