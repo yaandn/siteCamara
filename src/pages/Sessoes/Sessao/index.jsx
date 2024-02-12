@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import { sessionList } from '../../../data/InfoSessoes';
 import TopPages from '../../../components/TopPages';
+import Session from '../../../components/Session'
 import { Container, BoxSession, InfoSession, MattersSession, MattersList, Title, LiveSession } from './styles.js'
 
 export default function Sessao () {
@@ -42,7 +43,9 @@ export default function Sessao () {
                 </MattersSession>
                 <LiveSession>
                     <Title>Live da Sessão</Title>
-                    <iframe src={sessao.url_live} width="1120" height="952" style={{border:'none',overflow:'hidden'}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    <Session sessionLive = {"https://www.instagram.com/reel/C3DEiB3uNSr/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="}>
+
+                    </Session>
 
                     
                  
