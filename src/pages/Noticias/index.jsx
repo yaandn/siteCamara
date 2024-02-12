@@ -1,9 +1,13 @@
 import { Container } from "./styles";
+import InstaFeed from "../../components/InstaFeed";
+import TopPages from "../../components/TopPages"
 
 export default function Noticias() {
     return(
         <Container>
-            <h1>Page Noticias</h1>
+            <TopPages title={"NOTÍCIAS"}/>
+            <InstaFeed>
+            </InstaFeed>
         </Container>
     );
 }
