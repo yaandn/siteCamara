@@ -7,6 +7,9 @@ export const Container = styled.footer`
   bottom: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  font-size: 16px;
 `;
 
 export const Content = styled.div`
@@ -14,8 +17,8 @@ export const Content = styled.div`
   height: 100%;
   padding: 40px;
   display: flex;
-
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
 
   span {
     color: white;
@@ -24,5 +27,22 @@ export const Content = styled.div`
     display: flex;
     gap: 8px;
     align-items: center;
+  }
+
+  .redes-sociais {
+    width: auto;
+
+    .icons {
+      gap: 16px;
+
+      a {
+        color: whitesmoke;
+        transition: all 0.5s;
+
+        &:hover {
+          color: var(--cor-secundaria);
+        }
+      }
+    }
   }
 `;
