@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.footer`
   width: 100%;
-  height: 250px;
+
   background-color: var(--cor-primaria);
   bottom: 0;
   display: flex;
@@ -14,11 +14,21 @@ export const Container = styled.footer`
 
 export const Content = styled.div`
   width: 70%;
-  height: 100%;
+
   padding: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  .informacoes {
+    width: 65%;
+  }
+
+  .location {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
 
   span {
     color: white;
