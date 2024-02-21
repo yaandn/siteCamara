@@ -64,7 +64,7 @@ export const Button = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 16px;
   transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Adicionando transição */
   text-decoration: none;
 

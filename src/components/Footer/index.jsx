@@ -1,22 +1,37 @@
 import { Container, Content } from "./styles";
-import { FaPhoneAlt, FaClock, FaInstagram, FaFacebook } from "react-icons/fa";
+import {
+  FaPhoneAlt,
+  FaClock,
+  FaInstagram,
+  FaFacebook,
+  FaToolbox,
+} from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdMail } from "react-icons/md";
+import { GoLaw } from "react-icons/go";
 
 export default function Footer() {
   return (
     <Container>
       <Content>
-        <div>
+        <div className="informacoes">
           <span>&#169; SITE DA CAMÂRA MUNICIPAL DE ARAGOIÂNIA</span>
           <span>
-            <FaLocationDot />
-            AV. ALFREDO NASSER, 544 - CENTRO, ARAGOIÂNIA - GO, 75360-000
+            <span className="location">
+              <FaLocationDot size={25} />
+              CENTRO ADMINISTRATIVO MUNICIPAL ARMANDO SILVÉRIO RIOS - CÂMARA
+              MUNICIPAL DE ARAGOIÂNIA - PRAÇA SANTA LUZIA, N 37, CENTRO TÉRREO
+              CEP : 75.330-000
+            </span>
           </span>
           <span>
             <FaClock />
-            HORÁRIO DE FUNCIONAMENTO: SEGUNDA A SEXTA - 08:00 AS 12:00 - 14:00
+            HORÁRIO DE FUNCIONAMENTO: SEGUNDA A SEXTA - 08:00 AS 11:00 - 13:00
             AS 17:00
+          </span>
+          <span>
+            <FaToolbox />
+            SESSÕES ORDINÁRIAS: TODAS QUARTAS-FEIRAS AS 09:30h
           </span>
           <span>
             <FaPhoneAlt /> TELEFONE: (62) 3550-1113
