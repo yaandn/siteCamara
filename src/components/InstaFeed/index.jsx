@@ -18,7 +18,8 @@ export default function InstaFeed() {
   const [feedList, setFeedList] = useState([]);
 
   async function getInstaFeed() {
-    const token = import.meta.env.VITE_INSTA_TOKEN;
+    const token =
+      "IGQWRQYzBwdVFzNGJZAMXhtTjFoTDJoMTY3TUtZASktvYzhSTldmRk9GTXA3VWtiS0hvN2dyQXdrRHNXRWJrbzhQbVVTM282WGhHVzIzemxzVVRiOXpiMTlOaGlmRDBzZATVZAZAHhyZAHJpcEJBd2xsVjRGVHExbEptVkkZD";
     const fields = "media_url,media_type,permalink,caption"; // Adicionando 'caption' para a descrição
     const url = `https://graph.instagram.com/me/media?access_token=${token}&fields=${fields}`;
 
