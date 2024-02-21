@@ -50,7 +50,7 @@ export default function InstaFeed() {
                   <div className="text-button">
                     <Text>{item.caption}</Text>
                     <Button href={item.permalink}>
-                      <FaInstagram size={25} />
+                      <FaInstagram size={24} />
                       <span>Acessar a notícia no nosso instagram</span>
                     </Button>
                   </div>
