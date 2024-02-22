@@ -1,6 +1,6 @@
 import TopPages from "../../components/TopPages";
-
-import { Container, Title, Text, DownloadArea, ButtonDownload } from "./styles";
+import Button from "../../components/Button";
+import { Container, Title, Text, DownloadArea } from "./styles";
 import { GrDocumentDownload } from "react-icons/gr";
 
 export default function Legislacao() {
@@ -38,14 +38,8 @@ export default function Legislacao() {
         </Text>
 
         <DownloadArea>
-          <ButtonDownload href="https://drive.usercontent.google.com/u/0/uc?id=1MW5LPSP0ND3wfco84tUuerZM3zmMF6e9&export=download">
-            <GrDocumentDownload size={32} />
-            Acessar Regimento Interno
-          </ButtonDownload>
-          <ButtonDownload href="https://drive.usercontent.google.com/u/0/uc?id=1j914TUjeGwoZy_opjtdY7zqQsZzdTwo9&export=download">
-            <GrDocumentDownload size={32} />
-            Acessar Lei Orgânica
-          </ButtonDownload>
+          <Button title="Acessar Regimento Interno" />
+          <Button title="Acessar Lei Orgânica" />
         </DownloadArea>
       </Container>
     </>
