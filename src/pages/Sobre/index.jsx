@@ -1,9 +1,10 @@
 import { Container } from "./styles";
+import TopPages from "../../components/TopPages";
 
 export default function Sobre() {
-    return(
-        <Container>
-            <h1>Page Sobre</h1>
-        </Container>
-    );
+  return (
+    <Container>
+      <TopPages title="SOBRE A CÂMARA" />
+    </Container>
+  );
 }
