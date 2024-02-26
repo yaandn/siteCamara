@@ -8,7 +8,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.span`
-  font-size: 48px;
+  font-size: 40px;
   margin-top: 40px;
   margin-bottom: 50px;
   display: block;
@@ -46,12 +46,13 @@ export const Notice = styled.div`
 
 export const Image = styled.img`
   width: 400px;
-  height: 90%;
+  min-height: 90%;
 `;
 
 export const Text = styled.span`
   font-size: 18px;
   line-height: 1.5;
+  text-align: justify;
 `;
 
 export const Button = styled.a`

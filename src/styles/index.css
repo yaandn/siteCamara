@@ -1,19 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
 
 :root {
   --cor-primaria: #158146;
   --cor-primaria-light: rgba(45, 186, 108, 0.299);
-  --cor-secundaria: #F5B709;
-  --cor-terciaria: #1C3E7B;
+  --cor-secundaria: #f5b709;
+  --cor-terciaria: #1c3e7b;
   --cor-neutra: #e7e7e7;
   --cor-neutra-light: #f0f0f0;
   --cor-neutra-dark: #d3d3d3;
-  
-  
 }
 
 * {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -23,5 +21,3 @@ body {
   background-color: #ffffff;
   color: #000000;
 }
-
-
