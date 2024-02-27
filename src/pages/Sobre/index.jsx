@@ -11,11 +11,12 @@ export default function Sobre() {
         <img src={Camara} alt="imagem-auditorio" />
         <Text>
           <p>
-            Fundada em [ano de fundação], a Câmara Municipal de Aragoiania é uma
-            instituição essencial para a democracia e o desenvolvimento do
-            município. Ao longo dos anos, tem desempenhado um papel fundamental
-            na representação dos interesses da população, na criação e
-            fiscalização das leis locais e na promoção do bem-estar comunitário.
+            Fundada em 1958 junto a emancipação política de Aragoiânia, a Câmara
+            Municipal de Aragoiania é uma instituição essencial para a
+            democracia e o desenvolvimento do município. Ao longo dos anos, tem
+            desempenhado um papel fundamental na representação dos interesses da
+            população, na criação e fiscalização das leis locais e na promoção
+            do bem-estar comunitário.
           </p>
           <p>
             A história da Câmara Municipal de Aragoiania é marcada por momentos
