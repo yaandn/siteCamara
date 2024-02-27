@@ -7,7 +7,7 @@ export const sessionList = [
     ],
     url_live: 0,
     link_pauta:
-      "https://drive.usercontent.google.com/u/0/uc?id=1BytwRgU89Ilxgw2DuCOTI6h1woOIs0wO&export=download",
+      "https://drive.google.com/file/d/1BytwRgU89Ilxgw2DuCOTI6h1woOIs0wO/view?usp=sharing",
   },
   {
     id: "40",
@@ -19,7 +19,7 @@ export const sessionList = [
     ],
     url_live: 0,
     link_pauta:
-      "https://drive.usercontent.google.com/u/0/uc?id=1DBBZUnBk-n21KMN9L84ZYlbzeBIgS5_T&export=download",
+      "https://drive.google.com/file/d/1DBBZUnBk-n21KMN9L84ZYlbzeBIgS5_T/view?usp=sharing",
   },
   {
     id: "39",
@@ -31,7 +31,7 @@ export const sessionList = [
     ],
     url_live: 0,
     link_pauta:
-      "https://drive.usercontent.google.com/u/0/uc?id=1FNTXEhMFwYozapxroOTFbvG8wfikkCeM&export=download",
+      "https://drive.google.com/file/d/1FNTXEhMFwYozapxroOTFbvG8wfikkCeM/view?usp=sharing",
   },
   {
     id: "38",
@@ -41,6 +41,6 @@ export const sessionList = [
     ],
     url_live: 0,
     link_pauta:
-      "https://drive.usercontent.google.com/u/0/uc?id=1v7gcm0FbF8gEbGFN51mpI5fD9-DDIxYC&export=download",
+      "https://drive.google.com/file/d/1v7gcm0FbF8gEbGFN51mpI5fD9-DDIxYC/view?usp=sharing",
   },
 ];
