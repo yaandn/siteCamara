@@ -1,6 +1,8 @@
 import axios from "axios";
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { Container, Title, Notices, Notice, Card, Text } from "./style";
+import { Container, Title, Notices, Notice, Card, Text, Header } from "./style";
+import { CgMenuGridR } from "react-icons/cg";
 
 export default function UltimasNoticias() {
   const [feedList, setFeedList] = useState([]);
@@ -47,7 +49,14 @@ export default function UltimasNoticias() {
   }, [feedList]);
   return (
     <Container>
-      <Title>ÚLTIMAS NOTÍCIAS</Title>
+      <Header>
+        <Title>ÚLTIMAS NOTÍCIAS</Title>
+        <Link to="/noticias">
+          <CgMenuGridR />
+          <span>VER TODAS</span>
+        </Link>
+      </Header>
+
       <Notices>
         {ultimasNoticias.map((item) => {
           if (item.media_type === "IMAGE" && item.caption) {

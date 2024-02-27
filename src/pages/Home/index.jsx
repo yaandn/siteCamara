@@ -14,6 +14,8 @@ import { GiThorHammer } from "react-icons/gi";
 import { GiReceiveMoney } from "react-icons/gi";
 import ImgHome from "../../assets/imagens/edicaohome.png";
 import UltimasNoticias from "../../components/UltimasNoticias";
+import SlideSession from "../../components/SlideSession";
+import Location from "../../components/Location";
 
 export default function Home() {
   return (
@@ -82,6 +84,8 @@ export default function Home() {
           </AccessContainer>
         </Access>
         <UltimasNoticias />
+        <SlideSession />
+        <Location />
       </Content>
     </Container>
   );
