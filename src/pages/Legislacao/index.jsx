@@ -36,8 +36,14 @@ export default function Legislacao() {
             </p>
           </Text>
           <DownloadArea>
-            <Button title="Acessar Regimento Interno" />
-            <Button title="Acessar Lei Orgânica" />
+            <Button
+              title="Acessar Regimento Interno"
+              link="https://drive.google.com/file/d/1MW5LPSP0ND3wfco84tUuerZM3zmMF6e9/view?usp=sharing"
+            />
+            <Button
+              title="Acessar Lei Orgânica"
+              link="https://drive.google.com/file/d/1j914TUjeGwoZy_opjtdY7zqQsZzdTwo9/view?usp=sharing"
+            />
           </DownloadArea>
         </Content>
       </Container>
