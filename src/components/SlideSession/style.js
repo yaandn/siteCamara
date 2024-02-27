@@ -2,6 +2,33 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
+
+  .swiper-slide {
+    display: grid;
+    place-items: center; /* Centraliza horizontal e verticalmente */
+    margin: auto;
+    background-color: var(--cor-neutra-light);
+    height: 250px;
+
+    margin-bottom: 40px;
+  }
+
+  .swiper-button-next {
+    color: var(--cor-primaria);
+  }
+
+  .swiper-button-prev {
+    color: var(--cor-primaria);
+  }
+
+  .swiper-pagination-bullet {
+    background-color: var(--cor-primaria);
+    margin-top: 10px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: var(--cor-primaria);
+  }
 `;
 
 export const Header = styled.div`
@@ -39,43 +66,5 @@ export const Header = styled.div`
 export const Title = styled.span`
   font-size: 32px;
   font-weight: bold;
-
   display: block;
-`;
-
-export const Notices = styled.div`
-  display: flex;
-  gap: 32px;
-  width: 100%;
-  flex-wrap: wrap;
-  margin: auto;
-  margin-bottom: 40px;
-  justify-content: center;
-`;
-
-export const Card = styled.div`
-  width: 30%;
-  padding: 24px;
-  display: flex;
-  justify-content: center;
-  border: 1px solid var(--cor-neutra-dark);
-  border-radius: 8px;
-  background-color: var(--cor-neutra-light);
-`;
-export const Notice = styled.div`
-  width: 100%;
-  display: flex;
-
-  flex-direction: column;
-
-  img {
-    width: 250px;
-    height: 250px;
-  }
-`;
-
-export const Text = styled.span`
-  font-size: 12px;
-  line-height: 1.5;
-  text-align: justify;
 `;
