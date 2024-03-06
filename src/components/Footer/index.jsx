@@ -15,7 +15,7 @@ export default function Footer() {
     <Container>
       <Content>
         <div className="informacoes">
-          <span>&#169; SITE DA CAMÂRA MUNICIPAL DE ARAGOIÂNIA</span>
+          <span>&#169; SITE DA CÂMARA MUNICIPAL DE ARAGOIÂNIA</span>
           <span>
             <span className="location">
               <FaLocationDot size={25} />
