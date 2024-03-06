@@ -19,9 +19,9 @@ export default function Footer() {
           <span>
             <span className="location">
               <FaLocationDot size={25} />
-              CENTRO ADMINISTRATIVO MUNICIPAL MANOEL SILVÉRIO RIOS
-              <br />
               CÂMARA MUNICIPAL DE ARAGOIÂNIA
+              <br />
+              CENTRO ADMINISTRATIVO MUNICIPAL MANOEL SILVÉRIO RIOS
               <br />
               PRAÇA SANTA LUZIA, N 37, CENTRO TÉRREO CEP : 75.330-000
             </span>
