@@ -35,8 +35,17 @@ export const SearchContainer = styled.div`
 
   gap: 24px;
 
+  @media (max-width: 450px) {
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
+
   span {
     font-size: 30px;
+
+    @media (max-width: 450px) {
+      font-size: 24px;
+    }
   }
 
   .input-container {
@@ -52,6 +61,10 @@ export const SearchContainer = styled.div`
     border: 1px solid lightgray;
     border-right: none;
     font-size: 16px;
+
+    @media (max-width: 450px) {
+      width: 100%;
+    }
   }
 
   input:focus {
@@ -67,5 +80,9 @@ export const SearchContainer = styled.div`
     justify-content: center;
     border: 1px solid lightgray;
     cursor: pointer;
+  }
+
+  @media (max-width: 450px) {
+    width: 80%;
   }
 `;

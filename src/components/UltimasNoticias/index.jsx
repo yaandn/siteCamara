@@ -17,6 +17,7 @@ export default function UltimasNoticias() {
     try {
       const { data } = await axios.get(url);
       setFeedList(data.data);
+      console.log(feedList);
     } catch (error) {
       console.error("Erro ao obter o feed do Instagram:", error);
     }
@@ -33,7 +34,7 @@ export default function UltimasNoticias() {
     var primeirosCinco = [];
 
     // Copiar os primeiros 5 elementos do array original para o novo array
-    for (var i = 0; i < 5; i++) {
+    for (var i = 0; i < 7; i++) {
       primeirosCinco.push(array[i]);
     }
 
@@ -47,6 +48,7 @@ export default function UltimasNoticias() {
   useEffect(() => {
     pegarPrimeirosCincoElementos(feedList);
   }, [feedList]);
+
   return (
     <Container>
       <Header>

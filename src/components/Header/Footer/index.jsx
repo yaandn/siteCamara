@@ -17,11 +17,19 @@ export default function Footer() {
     <Container>
       <nav>
         {navItens.map((item) => {
-          return (
-            <Link to={item.link} key={item.id}>
-              <span>{item.title}</span>
-            </Link>
-          );
+          if (item.id === "5") {
+            return (
+              <a href={item.link} key={item.id} target="_blank">
+                <span>{item.title}</span>
+              </a>
+            );
+          } else {
+            return (
+              <Link to={item.link} key={item.id}>
+                <span>{item.title}</span>
+              </Link>
+            );
+          }
         })}
       </nav>
     </Container>

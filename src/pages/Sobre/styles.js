@@ -16,6 +16,16 @@ export const Content = styled.div`
   img {
     width: 100%;
     height: 500px;
+
+    @media (max-width: 450px) {
+      width: 100%;
+      height: 200px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    width: 85%;
+    margin-top: 24px;
   }
 `;
 
@@ -23,6 +33,11 @@ export const Title = styled.span`
   font-size: 40px;
   margin-bottom: 40px;
   display: block;
+
+  @media (max-width: 450px) {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
 `;
 
 export const Text = styled.span`
@@ -34,4 +49,10 @@ export const Text = styled.span`
   gap: 20px;
   margin-top: 40px;
   margin-bottom: 40px;
+
+  @media (max-width: 450px) {
+    font-size: 18px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
 `;

@@ -20,4 +20,8 @@ export const ButtonAccess = styled.a`
     color: var(--cor-primaria);
     border: 3px solid var(--cor-primaria);
   }
+
+  @media (max-width: 450px) {
+    width: 100%;
+  }
 `;

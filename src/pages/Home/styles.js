@@ -11,6 +11,11 @@ export const AccessTitle = styled.span`
   color: black;
   font-weight: bold;
   margin-bottom: 32px;
+
+  @media (max-width: 450px) {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
 `;
 
 export const Content = styled.div`
@@ -22,11 +27,20 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
 
+  @media (max-width: 450px) {
+    width: 90%;
+  }
+
   img {
     width: 1000px;
     height: 400px;
     border-radius: 8px;
     margin-bottom: 40px;
+
+    @media (max-width: 450px) {
+      width: 100%;
+      height: 200px;
+    }
   }
 `;
 
@@ -41,6 +55,14 @@ export const AccessContainer = styled.section`
   flex-wrap: wrap;
   gap: 12px;
   justify-content: center;
+
+  @media (max-width: 450px) {
+    width: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow: auto;
+  }
 `;
 
 export const CardAccess = styled.a`
@@ -61,5 +83,10 @@ export const CardAccess = styled.a`
 
   &:hover {
     color: var(--cor-secundaria);
+  }
+
+  @media (max-width: 450px) {
+    width: 90%;
+    height: 150px;
   }
 `;

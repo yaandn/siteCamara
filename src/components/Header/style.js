@@ -31,6 +31,11 @@ export const Container = styled.header`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @media (max-width: 450px) {
+    flex-direction: row;
+    box-shadow: 0px 7px 5px -4px rgba(0, 0, 0, 0.1);
+  }
 `;
 
 export const Navigation = styled.nav`
@@ -59,6 +64,10 @@ export const Navigation = styled.nav`
     align-items: center;
     justify-content: center;
     flex-direction: row;
+
+    @media (max-width: 450px) {
+      display: none;
+    }
   }
 
   .is-not-active {
@@ -73,6 +82,10 @@ export const Navigation = styled.nav`
     align-items: center;
     justify-content: center;
     flex-direction: row;
+
+    @media (max-width: 450px) {
+      display: none;
+    }
   }
 
   .transparencia {
@@ -89,6 +102,10 @@ export const Navigation = styled.nav`
     align-items: center;
     justify-content: center;
     flex-direction: row;
+
+    @media (max-width: 450px) {
+      display: none;
+    }
   }
 
   .logo-radar {
@@ -108,11 +125,29 @@ export const Navigation = styled.nav`
       width: 140px;
       height: 100%;
     }
+
+    @media (max-width: 450px) {
+      display: none;
+    }
   }
 
   .logo-camara {
     width: 100px;
     margin-right: 40px;
+
+    @media (max-width: 450px) {
+      margin: 0;
+      width: 100px;
+      margin-right: 30px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    width: 80%;
+    height: 90%;
   }
 `;
 
@@ -124,5 +159,9 @@ export const Button = styled.button`
   span {
     text-align: center;
     font-size: 16px;
+  }
+
+  @media (max-width: 450px) {
+    display: none;
   }
 `;

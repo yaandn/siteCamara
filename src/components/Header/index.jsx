@@ -3,6 +3,7 @@ import { Container, Navigation, Button, TopLine } from "./style";
 import { FaCircleInfo } from "react-icons/fa6";
 import Footer from "./Footer";
 import AccessInfo from "../AccessInfo";
+import { FaAlignJustify } from "react-icons/fa";
 
 import logo from "../../assets/imagens/logo.png";
 import logoTransparencia from "../../assets/imagens/logo-transparencia.png";
@@ -25,7 +26,8 @@ export default function Header() {
   ];
 
   const [active, setActive] = useState(0);
-  const { hover, setHover } = useContext(InfoAccessContext);
+  const { hover, setHover, isOpen, setIsOpen } = useContext(InfoAccessContext);
+  const [width, setWitdh] = useState(0);
 
   function handlePageIndex(index) {
     sessionStorage.setItem("pageAtual", index);
@@ -34,8 +36,9 @@ export default function Header() {
 
   useLayoutEffect(() => {
     const page = sessionStorage.getItem("pageAtual");
+    const width = window.innerWidth;
     setActive(Number(page));
-    console.log(hover);
+    setWitdh(width);
   }, []);
 
   return (
@@ -46,6 +49,13 @@ export default function Header() {
         <div className="line3"></div>
       </TopLine>
       <Container>
+        {width <= 500 && (
+          <FaAlignJustify
+            size={32}
+            color="#158146"
+            onClick={() => setIsOpen(true)}
+          />
+        )}
         <Navigation>
           <img src={logo} alt="logo-camâra" className="logo-camara" />
           {botoes.map((botao, index) => {

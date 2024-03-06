@@ -41,7 +41,7 @@ export default function Sessao() {
             {assuntos.map((assunto) => {
               return (
                 <li>
-                  <span>{assunto}</span>
+                  <span className="text_matters">{assunto}</span>
                 </li>
               );
             })}
