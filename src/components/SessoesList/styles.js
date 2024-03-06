@@ -5,6 +5,11 @@ export const Container = styled.div`
   margin: auto;
   margin-top: 40px;
   min-height: 80vh;
+
+  @media (max-width: 450px) {
+    width: 85%;
+    margin-top: 24px;
+  }
 `;
 
 export const List = styled.ul`
@@ -13,6 +18,12 @@ export const List = styled.ul`
   flex-direction: column;
   gap: 8px;
   margin-top: 32px;
+
+  @media (max-width: 450px) {
+    width: 100%;
+    margin-top: 24px;
+    list-style: none;
+  }
 `;
 
 export const Item = styled.li`
@@ -25,6 +36,10 @@ export const Item = styled.li`
     font-size: 20px;
     color: var(--cor-primaria);
     cursor: pointer;
+
+    @media (max-width: 450px) {
+      font-size: 16px;
+    }
   }
 
   &:hover {
@@ -34,4 +49,8 @@ export const Item = styled.li`
 
 export const Title = styled.span`
   font-size: 40px;
+
+  @media (max-width: 450px) {
+    font-size: 32px;
+  }
 `;

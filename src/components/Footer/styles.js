@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.footer`
   width: 100%;
-
   background-color: var(--cor-primaria);
   bottom: 0;
   display: flex;
@@ -14,20 +13,33 @@ export const Container = styled.footer`
 
 export const Content = styled.div`
   width: 70%;
-
   padding: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
+  @media (max-width: 450px) {
+    width: 90%;
+    flex-direction: column;
+  }
+
   .informacoes {
     width: 65%;
+
+    @media (max-width: 450px) {
+      width: 100%;
+      margin-bottom: 16px;
+    }
   }
 
   .location {
     display: flex;
     flex-direction: row;
     gap: 8px;
+
+    @media (max-width: 450px) {
+      font-size: 14px;
+    }
   }
 
   span {
@@ -37,6 +49,10 @@ export const Content = styled.div`
     display: flex;
     gap: 8px;
     align-items: center;
+
+    @media (max-width: 450px) {
+      font-size: 14px;
+    }
   }
 
   .redes-sociais {

@@ -9,6 +9,10 @@ export const BoxSession = styled.div`
   margin: auto;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 450px) {
+    width: 80%;
+  }
 `;
 
 export const InfoSession = styled.div`
@@ -17,6 +21,10 @@ export const InfoSession = styled.div`
   flex-direction: column;
   gap: 4px;
   margin-top: 40px;
+
+  @media (max-width: 450px) {
+    margin-top: 24px;
+  }
 
   span {
     color: gray;
@@ -34,6 +42,10 @@ export const MattersSession = styled.div`
 export const Title = styled.span`
   font-size: 48px;
   margin-bottom: 16px;
+
+  @media (max-width: 450px) {
+    font-size: 32px;
+  }
 `;
 
 export const MattersList = styled.ul`
@@ -46,6 +58,10 @@ export const MattersList = styled.ul`
     font-size: 20px;
     line-height: 1.5;
     font-weight: 400;
+
+    @media (max-width: 450px) {
+      font-size: 16px;
+    }
   }
 `;
 
@@ -66,4 +82,10 @@ export const DownloadArea = styled.div`
   display: flex;
   align-items: center;
   gap: 24px;
+
+  @media (max-width: 450px) {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 24px;
+  }
 `;

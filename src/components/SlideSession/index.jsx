@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+
+import { useLayoutEffect, useState } from "react";
 import { Container, Title, Header } from "./style";
 import { CgMenuGridR } from "react-icons/cg";
 import SessionCard from "../SessionCard";
@@ -11,6 +12,12 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 export default function SlideSession() {
+  const [width, setWidth] = useState(0);
+
+  useLayoutEffect(() => {
+    const width = window.innerWidth;
+    setWidth(width);
+  }, []);
   return (
     <Container>
       <Header>
@@ -20,7 +27,10 @@ export default function SlideSession() {
           <span>VER TODAS</span>
         </Link>
       </Header>
-      <Swiper slidesPerView={3} pagination={{ clickable: true }}>
+      <Swiper
+        slidesPerView={width <= 500 ? 1 : 3}
+        pagination={{ clickable: true }}
+      >
         {sessionList.map((item) => {
           return (
             <SwiperSlide>

@@ -5,6 +5,11 @@ export const Container = styled.div`
   margin: auto;
   margin-top: 40px;
   min-height: 100vh;
+
+  @media (max-width: 450px) {
+    width: 85%;
+    margin-top: 24px;
+  }
 `;
 
 export const Title = styled.span`
@@ -12,6 +17,12 @@ export const Title = styled.span`
   margin-top: 40px;
   margin-bottom: 50px;
   display: block;
+
+  @media (max-width: 450px) {
+    font-size: 32px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
 `;
 
 export const Notices = styled.div`
@@ -42,17 +53,29 @@ export const Notice = styled.div`
   width: 100%;
   display: flex;
   gap: 32px;
+
+  @media (max-width: 450px) {
+    flex-direction: column;
+  }
 `;
 
 export const Image = styled.img`
   width: 400px;
-  min-height: 90%;
+
+  @media (max-width: 450px) {
+    width: 100%;
+    height: 300px;
+  }
 `;
 
 export const Text = styled.span`
   font-size: 18px;
   line-height: 1.5;
   text-align: justify;
+
+  @media (max-width: 450px) {
+    font-size: 14px;
+  }
 `;
 
 export const Button = styled.a`
@@ -73,5 +96,9 @@ export const Button = styled.a`
     background-color: var(--cor-primaria-light);
     border: 2px solid var(--cor-primaria);
     color: var(--cor-primaria);
+  }
+
+  @media (max-width: 450px) {
+    width: 100%;
   }
 `;

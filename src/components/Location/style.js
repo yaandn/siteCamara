@@ -29,6 +29,10 @@ export const Header = styled.div`
       font-size: 16px;
       font-weight: bold;
 
+      @media (max-width: 450px) {
+        font-size: 14px;
+      }
+
       &:hover {
         color: var(--cor-secundaria);
       }
@@ -41,6 +45,11 @@ export const Title = styled.span`
   font-weight: bold;
 
   display: block;
+
+  @media (max-width: 450px) {
+    font-size: 24px;
+    margin-top: 32px;
+  }
 `;
 
 export const Content = styled.div`

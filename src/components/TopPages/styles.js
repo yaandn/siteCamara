@@ -8,6 +8,16 @@ export const BoxHeader = styled.div`
 
   .title {
     font-size: 32px;
+
+    @media (max-width: 450px) {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    width: 100%;
+    padding-left: 16px;
+    gap: 4px;
   }
 `;
 
@@ -18,4 +28,9 @@ export const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 450px) {
+    height: auto;
+    padding: 8px;
+  }
 `;

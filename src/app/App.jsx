@@ -1,5 +1,6 @@
 import RoutesApp from "../routes/routes";
 import Header from "../components/Header";
+import MenuMobile from "../components/MenuMobile";
 import { BrowserRouter } from "react-router-dom";
 import InfoAccessProvider from "../context/InfoAccessContext";
 import Footer from "../components/Footer";
@@ -11,6 +12,7 @@ function App() {
   return (
     <InfoAccessProvider>
       <BrowserRouter>
+        <MenuMobile />
         <Header />
         <RoutesApp />
         <Footer />

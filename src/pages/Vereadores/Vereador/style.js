@@ -11,14 +11,26 @@ export const BoxContainer = styled.div`
   width: 60%;
   display: flex;
   justify-content: center;
-  margin-top: 48px;
+  margin-top: 40px;
   gap: 24px;
+
+  @media (max-width: 450px) {
+    flex-direction: column;
+    width: 80%;
+    margin-top: 24px;
+  }
 `;
 
 export const InfoContainer = styled.div`
   width: 20%;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 450px) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+  }
 
   .subtitle {
     display: block;
@@ -31,6 +43,12 @@ export const InfoContainer = styled.div`
     flex-direction: column;
     gap: 16px;
     margin-top: 16px;
+
+    @media (max-width: 450px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
 
     .item-title {
       display: block;
