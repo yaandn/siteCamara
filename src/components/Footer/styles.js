@@ -12,7 +12,7 @@ export const Container = styled.footer`
 `;
 
 export const Content = styled.div`
-  width: 70%;
+  width: 75%;
   padding: 40px;
   display: flex;
   flex-direction: row;
@@ -36,6 +36,7 @@ export const Content = styled.div`
     display: flex;
     flex-direction: row;
     gap: 8px;
+    font-size: 14px;
 
     @media (max-width: 450px) {
       font-size: 14px;
