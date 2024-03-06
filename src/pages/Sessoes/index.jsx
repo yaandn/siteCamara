@@ -8,7 +8,6 @@ export default function Sessoes () {
     return (
         <Container>
             <TopPages title='SESSÕES E DELIBERAÇÕES'/>
-            
             <SessoesList/>
         </Container>
     ); 

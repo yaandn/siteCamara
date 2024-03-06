@@ -1,5 +1,25 @@
 export const sessionList = [
   {
+    id: "43",
+    data: "07/03/2024",
+    assuntos: ["Nenhum assunto tratado"],
+    url_live: 0,
+    link_pauta:
+      "https://drive.google.com/file/d/1RFWeZn-oIuE37g9tvb1zOJY7ZnUZ0uec/view?usp=sharing",
+  },
+  {
+    id: "42",
+    data: "28/02/2024",
+    assuntos: [
+      "LEITURA DO PROJETO DE LEI 1208/2024 QUE “AUTORIZA A AQUISIÇÃO DE IMÓVEL URBANO QUE MENCIONA, ATRAVÉS DE COMPRA OU DESAPROPRIAÇÃO POR UTILIDADE PÚBLICA E INTERESSE SOCIAL E DÁ OUTRAS PROVIDÊNCIAS.",
+      "LEITURA DO PROJETO DE LEI 1208/2024 QUE “AUTORIZA A AQUISIÇÃO DE IMÓVEL URBANO QUE MENCIONA, ATRAVÉS DE COMPRA OU DESAPROPRIAÇÃO POR UTILIDADE PÚBLICA E INTERESSE SOCIAL E DÁ OUTRAS PROVIDÊNCIAS",
+      "REQUERIMENTO 002/2024 DE AUTORIA DO VEREADOR PAULO ROBERTO DE OLIVEIRA.",
+    ],
+    url_live: 0,
+    link_pauta:
+      "https://drive.google.com/file/d/1ybvwPcUpRq4WWB0qfa1ePa7jzUey1UqA/view?usp=sharing",
+  },
+  {
     id: "41",
     data: "21/02/2024",
     assuntos: [
