@@ -23,5 +23,7 @@ export const ButtonAccess = styled.a`
 
   @media (max-width: 450px) {
     width: 100%;
+    height: 60px;
+    padding: 32px;
   }
 `;
