@@ -76,7 +76,6 @@ export const LiveSession = styled.div`
 
 export const DownloadArea = styled.div`
   width: 60%;
-  height: 80px;
   margin-top: 40px;
   margin-bottom: 80px;
   display: flex;
@@ -87,5 +86,6 @@ export const DownloadArea = styled.div`
     width: 100%;
     margin-top: 10px;
     margin-bottom: 24px;
+    flex-direction: column;
   }
 `;
