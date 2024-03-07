@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ButtonAccess = styled.a`
   width: 50%;
-  height: 100%;
+  height: 80px;
   background-color: var(--cor-primaria);
   border-radius: 16px;
   display: flex;
