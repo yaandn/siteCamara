@@ -6,6 +6,7 @@ export const sessionList = [
     url_live: 0,
     link_pauta:
       "https://drive.google.com/file/d/1RFWeZn-oIuE37g9tvb1zOJY7ZnUZ0uec/view?usp=sharing",
+    link_ata: "",
   },
   {
     id: "42",
@@ -18,6 +19,7 @@ export const sessionList = [
     url_live: 0,
     link_pauta:
       "https://drive.google.com/file/d/1ybvwPcUpRq4WWB0qfa1ePa7jzUey1UqA/view?usp=sharing",
+    link_ata: "",
   },
   {
     id: "41",
@@ -28,6 +30,7 @@ export const sessionList = [
     url_live: 0,
     link_pauta:
       "https://drive.google.com/file/d/1BytwRgU89Ilxgw2DuCOTI6h1woOIs0wO/view?usp=sharing",
+    link_ata: "",
   },
   {
     id: "40",
@@ -40,6 +43,7 @@ export const sessionList = [
     url_live: 0,
     link_pauta:
       "https://drive.google.com/file/d/1DBBZUnBk-n21KMN9L84ZYlbzeBIgS5_T/view?usp=sharing",
+    link_ata: "",
   },
   {
     id: "39",
@@ -52,6 +56,7 @@ export const sessionList = [
     url_live: 0,
     link_pauta:
       "https://drive.google.com/file/d/1FNTXEhMFwYozapxroOTFbvG8wfikkCeM/view?usp=sharing",
+    link_ata: "",
   },
   {
     id: "38",
@@ -62,5 +67,6 @@ export const sessionList = [
     url_live: 0,
     link_pauta:
       "https://drive.google.com/file/d/1v7gcm0FbF8gEbGFN51mpI5fD9-DDIxYC/view?usp=sharing",
+    link_ata: "",
   },
 ];
