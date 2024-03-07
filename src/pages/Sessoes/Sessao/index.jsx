@@ -57,6 +57,7 @@ export default function Sessao() {
         </LiveSession>
         <DownloadArea>
           <Button title="Acessar a pauta da Sessão" link={sessao.link_pauta} />
+          <Button title="Acessar a ata da Sessão" link={sessao.link_pauta} />
         </DownloadArea>
       </BoxSession>
     </Container>
