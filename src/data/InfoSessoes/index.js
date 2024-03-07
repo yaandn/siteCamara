@@ -1,6 +1,6 @@
 export const sessionList = [
   {
-    id: "43",
+    id: "04",
     data: "06/03/2024",
     assuntos: ["Nenhum assunto tratado"],
     url_live: 0,
@@ -9,7 +9,7 @@ export const sessionList = [
     link_ata: "",
   },
   {
-    id: "42",
+    id: "03",
     data: "28/02/2024",
     assuntos: [
       "LEITURA DO PROJETO DE LEI 1208/2024 QUE “AUTORIZA A AQUISIÇÃO DE IMÓVEL URBANO QUE MENCIONA, ATRAVÉS DE COMPRA OU DESAPROPRIAÇÃO POR UTILIDADE PÚBLICA E INTERESSE SOCIAL E DÁ OUTRAS PROVIDÊNCIAS.",
@@ -22,7 +22,7 @@ export const sessionList = [
     link_ata: "",
   },
   {
-    id: "41",
+    id: "02",
     data: "21/02/2024",
     assuntos: [
       "REQUERIMENTO 001/2024 DE AUTORIA DO VEREADOR JULIO CESAR BATISTA.",
@@ -30,6 +30,15 @@ export const sessionList = [
     url_live: 0,
     link_pauta:
       "https://drive.google.com/file/d/1BytwRgU89Ilxgw2DuCOTI6h1woOIs0wO/view?usp=sharing",
+    link_ata: "",
+  },
+  {
+    id: "01",
+    data: "07/02/2024",
+    assuntos: ["Nenhum assunto tratado"],
+    url_live: 0,
+    link_pauta:
+      "https://drive.google.com/file/d/1ltlROkDQ2ZDsxXWgqP6ym9BpEXZ-rd9M/view?usp=sharing",
     link_ata: "",
   },
   {
