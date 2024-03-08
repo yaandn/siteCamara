@@ -38,7 +38,7 @@ export default function InstaFeed() {
 
   return (
     <Container>
-      <Title>Últimas notícias da Câmara municipal de Aragoiânia</Title>
+      <Title>Últimas notícias da Câmara Municipal de Aragoiânia</Title>
 
       <Notices>
         {feedList.map((item) => {
