@@ -1,15 +1,19 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: ${({ type }) => (type === "nano" ? "200px" : "300px")};
-  height: ${({ type }) => (type === "nano" ? "fit-content" : "350px")};
+  width: ${({ type }) => (type === "nano" ? "250px" : "300px")};
+  height: ${({ type }) => (type === "nano" ? "300px" : "fit-content")};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   transition: width 0.1s ease-in;
   transition: height 0.1s ease-in;
 
   &:hover {
-    width: ${({ type }) => (type === "nano" ? "200px" : "310px")};
-    height: ${({ type }) => (type === "nano" ? "fit-content" : "360px")};
+    width: ${({ type }) => (type === "nano" ? "250px" : "310px")};
+    height: ${({ type }) => (type === "nano" ? "300px" : "400px")};
     cursor: pointer;
   }
 
@@ -38,7 +42,6 @@ export const BoxImg = styled.div`
 
   .foto-vereador {
     width: 100%;
-    height: ${({ type }) => (type === "nano" ? "200px" : "300px")};
 
     @media (max-width: 450px) {
       width: 100%;
@@ -51,8 +54,10 @@ export const Footer = styled.footer`
   display: flex;
   gap: 16px;
   align-items: center;
+  height: 80px;
+
   width: 100%;
-  height: 25%;
+
   background-color: #fff;
 
   padding: 16px;
@@ -69,12 +74,6 @@ export const Footer = styled.footer`
     align-items: center;
     justify-content: center;
 
-    span {
-      text-align: center;
-      margin-right: 12px;
-      font-weight: bold;
-    }
-
     img {
       height: 50px;
       width: 60px;
@@ -84,6 +83,11 @@ export const Footer = styled.footer`
   }
 
   .box-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: auto;
     span {
       font-size: ${({ type }) => (type === "nano" ? "16px" : "20px")};
       font-weight: ${({ type }) => (type === "nano" ? "normal" : "bold")};

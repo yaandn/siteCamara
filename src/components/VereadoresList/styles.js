@@ -6,6 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 40px;
 `;
 
 export const BoxContainer = styled.div`
@@ -17,7 +18,6 @@ export const BoxContainer = styled.div`
   justify-content: center;
   gap: 80px;
   flex-wrap: wrap;
-  margin-bottom: 100px;
 
   a {
     text-decoration: none;

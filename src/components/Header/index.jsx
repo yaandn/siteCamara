@@ -18,10 +18,17 @@ export default function Header() {
     {
       label: "CÂMARA",
       id: 1,
+      link: "/",
     },
     {
       label: "VEREADORES",
       id: 2,
+      link: "/vereadores",
+    },
+    {
+      label: "COMISSÕES",
+      id: 3,
+      link: "/comissoes",
     },
   ];
 
@@ -60,7 +67,7 @@ export default function Header() {
           <img src={logo} alt="logo-camâra" className="logo-camara" />
           {botoes.map((botao, index) => {
             return (
-              <Link to={index === 1 ? "/vereadores" : "/"} key={index}>
+              <Link to={botao.link}>
                 <Button
                   key={botao.id}
                   onClick={() => handlePageIndex(index)}

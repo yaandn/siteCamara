@@ -8,11 +8,11 @@ export const Container = styled.div`
 `;
 
 export const BoxContainer = styled.div`
-  width: 60%;
+  width: 75%;
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  gap: 24px;
+  gap: 16px;
 
   @media (max-width: 450px) {
     flex-direction: column;
@@ -22,9 +22,11 @@ export const BoxContainer = styled.div`
 `;
 
 export const InfoContainer = styled.div`
-  width: 20%;
+  width: fit-content;
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
+  gap: 16px;
 
   @media (max-width: 450px) {
     flex-wrap: wrap;
@@ -63,6 +65,7 @@ export const BioContainer = styled.div`
   height: 1000px;
   display: flex;
   flex-direction: column;
+  padding-top: 10px;
 
   span {
     font-size: 48px;
