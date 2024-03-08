@@ -56,6 +56,7 @@ export const Navigation = styled.nav`
     color: var(--cor-primaria);
     font-weight: bold;
     padding: 8px 12px;
+    min-width: 160px;
 
     border-radius: 8px;
     box-shadow: 6px 26px 89px -22px rgba(120, 119, 120, 1);
