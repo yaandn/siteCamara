@@ -7,7 +7,7 @@ export default function Sobre() {
     <Container>
       <TopPages title="SOBRE A CÂMARA" />
       <Content>
-        <Title>História e Compromisso da Câmara Municipal de Aragoiania</Title>
+        <Title>História e Compromisso da Câmara Municipal de Aragoiânia</Title>
         <img src={Camara} alt="imagem-auditorio" />
         <Text>
           <p>
