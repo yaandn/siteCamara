@@ -51,6 +51,33 @@ export const Navigation = styled.nav`
     text-decoration: none;
   }
 
+  .access-info {
+    background-color: var(--cor-secundaria-light);
+    color: var(--cor-primaria);
+    font-weight: bold;
+    padding: 8px 12px;
+
+    border-radius: 8px;
+    box-shadow: 6px 26px 89px -22px rgba(120, 119, 120, 1);
+    margin-left: 40px;
+    cursor: pointer;
+    border: 0.5px solid lightgrey;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 10px;
+
+    img {
+      width: 28%;
+    }
+
+    @media (max-width: 450px) {
+      display: none;
+    }
+  }
+
   .is-active {
     background-color: var(--cor-primaria-light);
     padding: 8px 12px;

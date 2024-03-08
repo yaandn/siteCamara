@@ -1,6 +1,6 @@
 import { Container, Navigation, Button, TopLine } from "./style";
 
-import { FaCircleInfo } from "react-icons/fa6";
+import Info from "../../assets/imagens/info.png";
 import Footer from "./Footer";
 import AccessInfo from "../AccessInfo";
 import { FaAlignJustify } from "react-icons/fa";
@@ -73,12 +73,12 @@ export default function Header() {
           })}
 
           <Button
-            className="transparencia"
+            className="access-info"
             onMouseOver={() => setHover(true)}
             onMouseOut={() => setHover(false)}
           >
-            <FaCircleInfo size={28} color="#158146" />
-            <span>Acesso a informação</span>
+            <img src={Info} alt="logo-info" />
+            <span>ACESSO A INFORMAÇÃO</span>
           </Button>
           <a
             href="https://radar.tce.mt.gov.br/extensions/radar-da-transparencia-publica/radar-da-transparencia-publica.html"
