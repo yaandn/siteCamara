@@ -12,7 +12,7 @@ export default function Sobre() {
         <Text>
           <p>
             Fundada em 1958 junto a emancipação política de Aragoiânia, a Câmara
-            Municipal de Aragoiania é uma instituição essencial para a
+            Municipal de Aragoiânia é uma instituição essencial para a
             democracia e o desenvolvimento do município. Ao longo dos anos, tem
             desempenhado um papel fundamental na representação dos interesses da
             população, na criação e fiscalização das leis locais e na promoção
@@ -28,14 +28,14 @@ export default function Sobre() {
           </p>
           <p>
             Comprometida com a transparência, ética e responsabilidade, a Câmara
-            Municipal de Aragoiania trabalha diariamente para atender às
+            Municipal de Aragoiânia trabalha diariamente para atender às
             necessidades da população e garantir uma gestão pública eficiente e
             democrática. Os vereadores, eleitos democraticamente, têm o
             compromisso de representar os interesses de todos os munícipes,
             independentemente de suas origens, crenças ou condições sociais.
           </p>
           <p>
-            Além de sua função legislativa, a Câmara Municipal de Aragoiania
+            Além de sua função legislativa, a Câmara Municipal de Aragoiânia
             também exerce um importante papel fiscalizador, acompanhando de
             perto a aplicação dos recursos públicos e garantindo que estes sejam
             utilizados de forma transparente e em benefício da comunidade. Por
@@ -45,7 +45,7 @@ export default function Sobre() {
             todos os aragoianienses.
           </p>
           <p>
-            Neste sentido, a Câmara Municipal de Aragoiania reafirma seu
+            Neste sentido, a Câmara Municipal de Aragoiânia reafirma seu
             compromisso com a democracia, a justiça social e o bem comum,
             trabalhando em parceria com a sociedade civil, o poder executivo e
             outras instituições, na construção de uma cidade mais justa,
