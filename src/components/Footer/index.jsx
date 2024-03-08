@@ -28,8 +28,8 @@ export default function Footer() {
           </span>
           <span>
             <FaClock size={25} />
-            HORÁRIO DE FUNCIONAMENTO: SEGUNDA A SEXTA - 08:00H DAS 11:00H -
-            13:00H AS 17:00H
+            HORÁRIO DE FUNCIONAMENTO: SEGUNDA A SEXTA DAS 08H AS 11H - 13H AS
+            17H
           </span>
           <span>
             <FaToolbox />

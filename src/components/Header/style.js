@@ -59,7 +59,7 @@ export const Navigation = styled.nav`
     min-width: 160px;
 
     border-radius: 8px;
-    box-shadow: 6px 26px 89px -22px rgba(120, 119, 120, 1);
+
     margin-left: 40px;
     cursor: pointer;
     border: 0.5px solid lightgrey;

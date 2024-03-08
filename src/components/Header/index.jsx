@@ -78,7 +78,7 @@ export default function Header() {
             onMouseOut={() => setHover(false)}
           >
             <img src={Info} alt="logo-info" />
-            <span>ACESSO A INFORMAÇÃO</span>
+            <span>ACESSO À INFORMAÇÃO</span>
           </Button>
           <a
             href="https://radar.tce.mt.gov.br/extensions/radar-da-transparencia-publica/radar-da-transparencia-publica.html"
