@@ -16,7 +16,7 @@ import { useContext } from "react";
 export default function Header() {
   const botoes = [
     {
-      label: "CAMÂRA",
+      label: "CÂMARA",
       id: 1,
     },
     {
