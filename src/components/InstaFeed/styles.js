@@ -36,6 +36,7 @@ export const Notices = styled.div`
 
 export const Card = styled.div`
   width: 100%;
+  max-height: 500px;
   padding: 24px;
   display: flex;
   justify-content: center;
@@ -69,9 +70,11 @@ export const Image = styled.img`
 `;
 
 export const Text = styled.span`
-  font-size: 18px;
+  font-size: 1.1rem;
   line-height: 1.5;
   text-align: justify;
+  height: 80%;
+  overflow: auto;
 
   @media (max-width: 450px) {
     font-size: 14px;
@@ -79,7 +82,7 @@ export const Text = styled.span`
 `;
 
 export const Button = styled.a`
-  width: 40%;
+  min-width: 40%;
   padding: 12px 16px;
   cursor: pointer;
   background-color: var(--cor-primaria);
