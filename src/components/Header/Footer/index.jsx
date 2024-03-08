@@ -6,7 +6,7 @@ export default function Footer() {
     { id: "1", title: "LEGISLAÇÃO", link: "/legislacao" },
     { id: "2", title: "SOBRE A CÂMARA", link: "/sobre" },
     { id: "3", title: "SESSÕES E DELIBERAÇÕES", link: "/sessoes" },
-    { id: "4", title: "NOTICIAS", link: "/noticias" },
+    { id: "4", title: "NOTÍCIAS", link: "/noticias" },
     {
       id: "5",
       title: "TRANSPARÊNCIA",
