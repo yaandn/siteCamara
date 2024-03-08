@@ -33,7 +33,7 @@ export default function Footer() {
           </span>
           <span>
             <FaToolbox />
-            SESSÕES ORDINÁRIAS: TODAS QUARTAS-FEIRAS AS 09:30h
+            SESSÕES ORDINÁRIAS: QUARTAS-FEIRAS AS 09:30h
           </span>
           <span>
             <FaPhoneAlt /> TELEFONE: (62) 3550-1113
