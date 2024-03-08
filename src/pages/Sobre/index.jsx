@@ -31,7 +31,7 @@ export default function Sobre() {
             Municipal de Aragoiânia trabalha diariamente para atender às
             necessidades da população e garantir uma gestão pública eficiente e
             democrática. Os vereadores, eleitos democraticamente, têm o
-            compromisso de representar os interesses de todos os munícipes,
+            compromisso de representar os interesses de todos os munícipios,
             independentemente de suas origens, crenças ou condições sociais.
           </p>
           <p>
