@@ -19,7 +19,7 @@ export default function Sobre() {
             do bem-estar comunitário.
           </p>
           <p>
-            A história da Câmara Municipal de Aragoiania é marcada por momentos
+            A história da Câmara Municipal de Aragoiânia é marcada por momentos
             de desafio e superação, mas também por conquistas significativas em
             prol da comunidade. Desde sua criação, tem sido um espaço de debate,
             onde os vereadores eleitos pelo povo se reúnem para discutir os
