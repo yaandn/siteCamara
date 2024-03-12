@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const BoxContainer = styled.div`
-  width: 80%;
+  min-width: 80%;
   display: flex;
   align-items: row;
 
