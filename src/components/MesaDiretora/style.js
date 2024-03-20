@@ -11,6 +11,11 @@ export const Container = styled.div`
   flex-direction: column;
   background-color: var(--cor-neutra-light);
 
+  @media (max-width: 500px) {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
   .title {
     display: block;
     font-size: 48px;
@@ -29,6 +34,12 @@ export const Content = styled.div`
 
   justify-content: center;
   gap: 32px;
+
+  @media (max-width: 500px) {
+    width: 75%;
+    justify-content: center;
+    border-radius: none;
+  }
 
   .item {
     display: flex;

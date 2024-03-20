@@ -21,11 +21,19 @@ export const TitleContainer = styled.div`
   .title {
     display: block;
     font-size: 32px;
+
+    @media (max-width: 500px) {
+      font-size: 28px;
+    }
   }
 
   .icon {
     color: var(--cor-primaria);
     font-size: 32px;
+
+    @media (max-width: 500px) {
+      font-size: 28px;
+    }
   }
 `;
 
@@ -45,6 +53,11 @@ export const Content = styled.div`
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+      gap: 60px;
+    }
   }
   .item {
     display: flex;
@@ -59,5 +72,10 @@ export const Content = styled.div`
     padding-bottom: 8px;
     border-bottom: 2px solid var(--cor-primaria);
     color: var(--cor-primaria);
+
+    @media (max-width: 500px) {
+      margin-top: 16px;
+      font-size: 22px;
+    }
   }
 `;

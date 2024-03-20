@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const BoxContainer = styled.div`
-  min-width: 80%;
+  width: 70%;
   display: flex;
   align-items: row;
 
@@ -26,7 +26,8 @@ export const BoxContainer = styled.div`
 `;
 
 export const SearchContainer = styled.div`
-  width: 70%;
+  width: 60%;
+
   margin-top: 48px;
   margin-bottom: 48px;
 
@@ -51,10 +52,14 @@ export const SearchContainer = styled.div`
   .input-container {
     display: flex;
     align-items: center;
+    width: 30%;
+    @media (max-width: 500px) {
+      width: 100%;
+    }
   }
 
   input {
-    width: 30%;
+    width: 100%;
     padding: 16px;
     height: 48px;
     background-color: var(--cor-neutra-light);
@@ -62,7 +67,7 @@ export const SearchContainer = styled.div`
     border-right: none;
     font-size: 16px;
 
-    @media (max-width: 450px) {
+    @media (max-width: 500px) {
       width: 100%;
     }
   }
