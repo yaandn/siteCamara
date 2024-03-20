@@ -1,5 +1,14 @@
 export const sessionList = [
   {
+    id: "06",
+    data: "20/03/2024",
+    assuntos: ["Nenhum assunto tratado"],
+    url_live: 0,
+    link_pauta:
+      "https://drive.google.com/file/d/1S8U4mkmHKAOCqaQS3U0X_MlEmhg4vVIk/view?usp=sharing",
+    link_ata: "",
+  },
+  {
     id: "05",
     data: "13/03/2024",
     assuntos: ["Nenhum assunto tratado"],
