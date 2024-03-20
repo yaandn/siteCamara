@@ -41,6 +41,11 @@ export default function MenuMobile() {
       label: "VEREADORES",
       link: "/vereadores",
     },
+    {
+      id: "7",
+      label: "COMISSÕES",
+      link: "/comissoes",
+    },
   ];
 
   const { isOpen, setIsOpen } = useContext(InfoAccessContext);
